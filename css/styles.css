@@ -535,8 +535,7 @@ footer {
         transition-delay: 0s, 0.25s, 0s; }
 
 #project_image {
-  height: 50%;
-  width: 50%;
+  width: 25vw;
   margin: 1rem auto; }
 
 #overlay_close {

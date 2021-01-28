@@ -48,15 +48,7 @@ $(document).ready(function () {
             }
         ]
     });
-
-    // $('.projects__carousel-apps').slick({
-    //     speed: 300,
-    //     swipeToSlide: true,
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3
-    // });
-
+    
     // BEGIN PROJECTS OVERLAY
     if ($('.web_card').click(function () {
         $('.projects__carousel-card--overlay').css('display', 'flex');
