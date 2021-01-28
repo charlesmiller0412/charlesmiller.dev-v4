@@ -1,0 +1,117 @@
+/* Charles Miller
+    GIT 417
+    Final Project - Javascript Tutorial
+    Fall A 2020  
+*/
+
+/* HIGHLIGHT.JS CHANGES */
+.javascript {
+    background-color:#2D2D2D;
+    color: #F2F2F2;
+}
+
+.hljs-keyword, .hljs-string, .hljs-number {
+    color: #C5D961;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+}
+
+h2 {
+    font-family: acier-bat-gris,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #2D2D2D;
+    font-family: conglomerate,serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 1.5em 30px 0 30px;
+    height: 150px;
+    background-image: linear-gradient(#C5D961 80%, #F2F2F2);
+    font-family: acier-bat-gris,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header h1{
+    font-size: 5em;
+}
+
+#headerBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN */
+main {
+    padding: 20px 30px;
+    background-color: #F2F2F2;
+    padding-bottom: 100px;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+#info {
+    display: inline-block;
+    width: 55%;
+}
+
+
+/* JS EXAMPLE */
+#example {
+    width: 30%;
+    background-color: #EAEDD2;
+    padding: 20px;
+    margin-right: 100px;
+    border-radius: 20px;
+    min-height: 300px;
+}
+
+#example h2 {
+    margin: 10px;
+}
+
+.mainCat {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.subCat {
+    font-size: 1em;
+}
+
+
+/* WALKTHROUGH */
+#congrats {
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 0 30px;
+    background-image: linear-gradient(#F2F2F2, #C5D961 80%);
+}

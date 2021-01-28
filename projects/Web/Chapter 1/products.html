@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="modernizr.custom.05819.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/jnz6ntw.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <title>Integrated Engineering | PRODUCTS</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/IE_SECONDARY_LOGO_WEB_180x@2x.png" alt="logo">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT IE</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn"><a href="products.html" id="active">PRODUCTS</a></button>
+                        <div class="dropdown-content">
+                          <a href="wishlist.html">Create A Wish List</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT IE</a></li>
+                    <li><a href="security.html">WEB SECURITY</a></li>
+                </ul>
+                <aside id="statement">FOR EDUCATIONAL PURPOSES ONLY</aside>
+            </nav>
+        </header>
+
+        <main id="products">
+
+            <form id="partSelect">
+                <h3>Select a part to search for:</h3>
+                <select id="parts" name="parts">
+                    <option value="all">All</option>
+                    <option value="intake">Cold Air Intake</option>
+                    <option value="dp">Downpipe</option>
+                </select>
+                <button id="searchParts" onclick="showParts(); return false">Search</button>
+            </form>
+
+            <section id="productView">
+                <aside id="intake">
+                    <img src="https://cdn.shopify.com/s/files/1/0054/2605/3231/products/IE_MQB_INTAKE_V2_03_aeb33b86-61cc-4d63-b936-0733bbb68c90_1080x.jpg?v=1578611299" alt="Integrated Engineering Cold Air Intake">
+                    <h3>IE MQB 2.0T/1.8T Gen 3 Cold Air Intake | VW MK7 GTI, Golf R, Golf, & Audi 8V A3</h3><br>
+                    <h4 class="price">$349.99</h4><br><br>
+                    <h4>Enter quantity:</h4>
+                    <input type="number" id="quantityIntake" min="0">
+                    <button type="button" id="button" onclick="calculateIntake()">Calculate</button><br>
+                    <h4>Your total cost including tax is: <span id="finalPriceIntake">$0.00</span></h4>
+                    <h5>(Includes free shipping)</h5>
+                    <!-- create a function to calculate the total price of the item based on user input -->
+                </aside>
+
+                <!-- Downpipe with  -->
+                <aside id="dp">
+                    <img src="https://cdn.shopify.com/s/files/1/0054/2605/3231/products/mk7_mqb_downpipe_18.1528175956_1080x.jpg?v=1551687796" alt="Integrated Engineering Downpipe">
+                    <h3>IE MQB VW MK7/MK7.5 GTI, Golf, & Audi A3 Performance Cast Downpipe (FWD)</h3><br>
+                    <h4 class="price">$799.99</h4><br><br>
+                    <h4>Enter quantity:</h4>
+                    <input type="number" id="quantityDP" min="0">
+                    <button type="button" id="button" onclick="calculateDP()">Calculate</button><br>
+                    <h4>Your total cost including tax is: <span id="finalPriceDP">$0.00</span></h4>
+                    <h5>(Includes free shipping)</h5>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <h4>Charles Miller | GIT 418 | FALL 2020</h4>
+        </footer>
+        <script src="script.mjs"></script>
+    </body>
+</html>
