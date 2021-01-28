@@ -499,6 +499,40 @@ footer {
       width: 100%;
       height: 100%;
       margin: 0; }
+  .projects button {
+    text-transform: uppercase; }
+  .projects .draw-border {
+    box-shadow: inset 0 0 0 4px #0A1A27;
+    color: #0A1A27;
+    transition: color 0.25s 0.08333s;
+    position: relative; }
+    .projects .draw-border::before, .projects .draw-border::after {
+      border: 0 solid transparent;
+      box-sizing: border-box;
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      right: 0; }
+    .projects .draw-border::before {
+      border-bottom-width: 4px;
+      border-left-width: 4px; }
+    .projects .draw-border::after {
+      border-top-width: 4px;
+      border-right-width: 4px; }
+    .projects .draw-border:hover {
+      color: #96BFB6; }
+      .projects .draw-border:hover::before, .projects .draw-border:hover::after {
+        border-color: #96BFB6;
+        transition: border-color 0s, width 0.25s, height 0.25s;
+        width: 100%;
+        height: 100%; }
+      .projects .draw-border:hover::before {
+        transition-delay: 0s, 0s, 0.25s; }
+      .projects .draw-border:hover::after {
+        transition-delay: 0s, 0.25s, 0s; }
 
 #project_image {
   height: 50%;

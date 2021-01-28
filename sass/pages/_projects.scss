@@ -91,6 +91,14 @@
             }
         }
     }
+
+    // THIS SITE BUTTON
+    & button {
+        text-transform: uppercase;
+    }
+    & .draw-border {
+        @include btn-border-drawing($color-dark-blue, $color-green, 4px, bottom, right);
+    }
 }
 
 #project_image {
