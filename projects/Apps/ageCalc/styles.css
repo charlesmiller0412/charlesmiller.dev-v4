@@ -1,0 +1,23 @@
+body {
+    background-color: #FFF;
+    color: #542C1B;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header {
+    margin: 10px;
+}
+
+.backTo {
+    background-color: #305580;
+    text-align: center;
+}
+
+.backTo a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Lato", sans-serif;
+}
