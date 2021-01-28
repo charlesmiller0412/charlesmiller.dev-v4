@@ -1,0 +1,39 @@
+{
+  "name": "charlesmiller.dev",
+  "version": "1.0.0",
+  "description": "Front End Web Developer Charles Miller Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesmiller0412/charlesmiller.dev.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "developer",
+    "designer",
+    "html",
+    "css",
+    "scss",
+    "sass",
+    "javascript",
+    "js"
+  ],
+  "author": "Charles Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesmiller0412/charlesmiller.dev/issues"
+  },
+  "homepage": "https://github.com/charlesmiller0412/charlesmiller.dev#readme",
+  "devDependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}

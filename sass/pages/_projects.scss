@@ -1,0 +1,166 @@
+.projects {
+    background-image: linear-gradient(rgba($color-sand, .8), rgba($color-sand, .8));
+    height: 100vh;
+
+    & hr {
+        border-bottom: 3px solid $color-green;
+        box-shadow: 2px 0 4px $color-green;
+    }
+
+    & .row:not(:first-of-type) {
+        padding-top: 1vh;
+    }
+
+    &__carousel {
+        &-card {
+            position: relative;
+            height: 100%;
+            padding: .5rem;
+            cursor: pointer;
+            padding-bottom: 1rem;
+
+            &:focus {
+                cursor: grabbing;
+            }
+
+            & a,
+            & h5, 
+            & span {
+                color: $color-dark-blue;
+                font-family: $exo;
+                text-decoration: none;
+
+                & img {
+                    width: 90%;
+                    height: 50%;
+
+                    &:active {
+                        cursor: grabbing;
+                    }
+                }
+            }
+
+            &--overlay {
+                z-index: 10;
+                display: none;
+                height: 50vh;
+                width: 60vw;
+                background-color: rgba($color-green, .9);
+                background-image: linear-gradient(0deg, rgba($color-green, .8), rgba( #fff, .8), 80%, rgba($color-green, .8));
+                border-radius: 1rem;
+                @include centered;
+                flex-direction: column;
+                box-shadow: 0 0 2rem $color-dark-blue;
+                
+                & .btn {
+                    width: 20vw;
+                    margin-bottom: 2rem;
+                }
+
+                & .draw-border {
+                    @include btn-border-drawing($color-dark-blue, $color-green, 4px, bottom, right);
+                }
+            }
+        }
+
+        &-web {
+            &--image {
+                margin-bottom: 1rem;
+                & img {
+                    width: 100%;
+                    height: 50%;
+                    margin-right: 0;
+                }
+            }
+        }
+    
+
+        &-graphic {
+
+            &--image {
+                width: 41%;
+                height: 50%;
+                margin-bottom: 1rem;
+                margin: auto;
+
+                &---wide {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+#project_image {
+    height: 50%;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#overlay_close {
+    background-color: transparent;
+    border: 2px solid $color-dark-blue;
+    color: $color-dark-blue;
+    border-radius: .5rem;
+    font-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.slick-prev:before, 
+    .slick-next:before {
+        color: $color-dark-blue;
+}
+
+.slick-list {
+    background-color: rgba( #fff, .5);
+    border-radius: 1rem;
+    box-shadow: 0 1px 2rem $color-dark-blue;
+}
+
+@media (max-width: 991.98px) {
+    .slick-prev:before, 
+    .slick-next:before {
+        display: none;
+    }
+    .projects__carousel-card--overlay {
+        & #project_image {
+            width: 100vw;
+            margin-top: 2rem;
+        }
+        & .btn {
+            width: 50vw;
+            padding: 1rem 2rem;
+        }
+        & a {
+            padding: 0;
+        }
+    }
+
+    .projects {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+        .projects__carousel-card--overlay {
+            width: 80vw;
+            height: 80vh;
+        & #project_image {
+            width: 50vw;
+            margin-top: 2rem;
+        }
+        & .btn {
+            width: 50vw;
+            padding: 1rem 2rem;
+        }
+        & a {
+            padding: 0;
+        }
+    }
+}
