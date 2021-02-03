@@ -76,7 +76,9 @@
     
 
         &-graphic {
-
+            & img {
+                margin: auto;
+            }
             &--image {
                 width: 41%;
                 height: 50%;
