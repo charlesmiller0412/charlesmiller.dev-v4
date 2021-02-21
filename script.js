@@ -7,12 +7,13 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 1000,
                 settings: {
+                    arrows: false,
                     swipeToSlide: true,
                     speed: 300,
                     slidesToShow: 1,
@@ -31,12 +32,13 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 1000,
                 settings: {
+                    arrows: false,
                     swipeToSlide: true,
                     speed: 300,
                     slidesToShow: 1,
@@ -48,6 +50,12 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.dutchCarousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+    });
     
     // BEGIN PROJECTS OVERLAY
     if ($('.web_card').click(function () {
@@ -58,6 +66,10 @@ $(document).ready(function () {
             $('#project_image').attr({ 'src': '/projects/Web/natours/natours.png', 'alt': 'Natours Project' });
             $('#project_site').attr({ 'href': '/projects/Web/natours/index.html', 'target': '_blank' });
             $('#project_code').attr({ 'href': 'https://github.com/charlesmiller0412/natours', 'target': '_blank' });
+        } else if (this.id === 'dutchbros') {
+            $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/Miller- homeComp.jpg', 'alt': 'Dutch Bros Coffee Site Redesign' });
+            $('#project_site').attr({ 'href': '/dutchbros.html', 'target': '_blank' });
+            $('#project_code').css('display', 'none');
         } else if (this.id === 'twotrees') {
             $('#project_image').attr({ 'src': '/projects/Web/Two Trees/Screenshot.png', 'alt': 'Two Trees Project' });
             $('#project_site').attr({ 'href': '/projects/Web/Two Trees/index.html', 'target': '_blank' });
@@ -143,6 +155,14 @@ $(document).ready(function () {
     }, function() { // Mouse out
         $(this).stop().fadeTo(300, 1);
         $('.projects__carousel-card').stop().fadeTo(300, 1);
+    });
+
+    $('.dutchCarousel-card').hover(function() { // Mouse over
+        $('.dutchCarousel-card').not(this).stop().fadeTo(300, 0.6);
+        $('.dutchCarousel-card').not(this).stop().fadeTo(300, 0.3); 
+    }, function() { // Mouse out
+        $(this).stop().fadeTo(300, 1);
+        $('.dutchCarousel-card').stop().fadeTo(300, 1);
     });
 
     // BEGIN SCROLL ACTIVE LINKS

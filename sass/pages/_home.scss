@@ -1,10 +1,11 @@
 .home {
     @include parallax;
-    background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/austin.webp);
-    -webkit-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/austin.webp);
-    -moz-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/austin.webp);
-    -ms-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/austin.webp);
+    background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/annie-xia-pgb-KOJXhwk-unsplash.jpg);
+    -webkit-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/annie-xia-pgb-KOJXhwk-unsplash.jpg);
+    -moz-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/annie-xia-pgb-KOJXhwk-unsplash.jpg);
+    -ms-background-image: linear-gradient(0deg, rgba($color-green, .8), rgba($color-green, .8)), url(/images/annie-xia-pgb-KOJXhwk-unsplash.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 
     &__left {

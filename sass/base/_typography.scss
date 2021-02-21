@@ -109,6 +109,26 @@ footer {
     font-size: 1vw;
 }
 
+.dutchbros {
+    header {
+        & h1 {
+            font-family: $bree;
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 1rem;
+        }
+    }
+    & main {
+        font-family: $yrsa;
+        font-size: 1.3vw;
+        & h3 {
+            font-family: $continuo;
+            color: $color-dark-blue;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .home {
         & .container {
@@ -122,6 +142,14 @@ footer {
         }
         & span {
             font-size: 8vw;
+        }
+    }
+    .dutchbros {
+        & header h1 {
+            font-size: 3.5vw;
+        }
+        & .row {
+            font-size: 3vw;
         }
     }
 }
