@@ -68,19 +68,13 @@ $(document).ready(function () {
             $('#project_image').attr({ 'src': '/projects/Web/weather/weather.png', 'alt': 'React Weather Project' });
             $('#project_site').attr({ 'href': 'https://www.charlesmiller.dev/weather-app', 'target': '_blank' });
             $('#project_code').attr({ 'href': 'https://github.com/charlesmiller0412/weatherApp', 'target': '_blank' });
-        }
-        if (this.id === 'dutchbros') {
-            $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/dutchbros.png', 'alt': 'utch Bros Coffee Redesign project' });
+        } else if (this.id === 'dutchbros') {
+            $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/Miller- homeComp.jpg', 'alt': 'utch Bros Coffee Redesign project' });
             $('#project_site').attr({ 'href': 'https://www.charlesmiller.dev/dutchbros.html', 'target': '_blank' });
-        }
-        if (this.id === 'natours') {
+        } else if (this.id === 'natours') {
             $('#project_image').attr({ 'src': '/projects/Web/natours/natours.png', 'alt': 'Natours Project' });
             $('#project_site').attr({ 'href': '/projects/Web/natours/index.html', 'target': '_blank' });
             $('#project_code').attr({ 'href': 'https://github.com/charlesmiller0412/natours', 'target': '_blank' });
-        } else if (this.id === 'dutchbros') {
-            $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/Miller- homeComp.jpg', 'alt': 'Dutch Bros Coffee Site Redesign' });
-            $('#project_site').attr({ 'href': '/dutchbros.html', 'target': '_blank' });
-            $('#project_code').css('display', 'none');
         } else if (this.id === 'twotrees') {
             $('#project_image').attr({ 'src': '/projects/Web/Two Trees/Screenshot.png', 'alt': 'Two Trees Project' });
             $('#project_site').attr({ 'href': '/projects/Web/Two Trees/index.html', 'target': '_blank' });
