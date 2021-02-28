@@ -438,9 +438,11 @@ footer {
     .projects .featured img {
       width: 23vw;
       height: 18vh;
-      transition: all .5s; }
+      transition: all .5s ease-out;
+      box-shadow: 0 0 2rem #0A1A27; }
       .projects .featured img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.2);
+        box-shadow: 0 0 1rem #0A1A27; }
   .projects__carousel-card {
     position: relative;
     height: 100%;
@@ -594,9 +596,6 @@ footer {
   box-shadow: 0 1px 2rem #0A1A27; }
 
 @media (max-width: 991.98px) {
-  .featured img {
-    width: 100vw;
-    margin: auto; }
   .projects__carousel-card img {
     width: 50vw;
     margin: auto; }
@@ -610,7 +609,8 @@ footer {
     padding: 0; }
   .projects {
     overflow-x: hidden; }
-    .projects .featured a img {
+    .projects .featured img {
+      margin: 1rem auto;
       width: 40vw;
       height: auto; }
   #featured-thin {
