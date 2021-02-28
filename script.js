@@ -71,6 +71,7 @@ $(document).ready(function () {
         } else if (this.id === 'dutchbros') {
             $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/Miller- homeComp.jpg', 'alt': 'utch Bros Coffee Redesign project' });
             $('#project_site').attr({ 'href': 'https://www.charlesmiller.dev/dutchbros.html', 'target': '_blank' });
+            $('#project_code').css('display', 'none');
         } else if (this.id === 'natours') {
             $('#project_image').attr({ 'src': '/projects/Web/natours/natours.png', 'alt': 'Natours Project' });
             $('#project_site').attr({ 'href': '/projects/Web/natours/index.html', 'target': '_blank' });
