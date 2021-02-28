@@ -13,16 +13,12 @@
 
     & .featured {
         text-align: center;
-        & a {
-            color: $color-dark-blue;
-            text-decoration: none;
-            & img {
-                width: 20vw;
-                height: 20vh;
-                transition: all .5s;
-                &:hover {
-                    transform: scale(1.2);
-                }
+        & img {
+            width: 23vw;
+            height: 18vh;
+            transition: all .5s;
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }

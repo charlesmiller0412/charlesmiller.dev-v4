@@ -58,10 +58,21 @@ $(document).ready(function () {
     });
     
     // BEGIN PROJECTS OVERLAY
+
+
     if ($('.web_card').click(function () {
         $('.projects__carousel-card--overlay').css('display', 'flex');
         $('#project_code').css('display', 'block'); //makes view code display as block for each select
         
+        if (this.id === 'weather') {
+            $('#project_image').attr({ 'src': '/projects/Web/weather/weather.png', 'alt': 'React Weather Project' });
+            $('#project_site').attr({ 'href': 'https://www.charlesmiller.dev/weather-app', 'target': '_blank' });
+            $('#project_code').attr({ 'href': 'https://github.com/charlesmiller0412/weatherApp', 'target': '_blank' });
+        }
+        if (this.id === 'dutchbros') {
+            $('#project_image').attr({ 'src': '/projects/Web/Dutch Bros Comps/dutchbros.png', 'alt': 'utch Bros Coffee Redesign project' });
+            $('#project_site').attr({ 'href': 'https://www.charlesmiller.dev/dutchbros.html', 'target': '_blank' });
+        }
         if (this.id === 'natours') {
             $('#project_image').attr({ 'src': '/projects/Web/natours/natours.png', 'alt': 'Natours Project' });
             $('#project_site').attr({ 'href': '/projects/Web/natours/index.html', 'target': '_blank' });
