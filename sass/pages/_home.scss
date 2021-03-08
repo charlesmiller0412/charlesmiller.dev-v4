@@ -37,4 +37,20 @@
             }
         }
     }
+
+    &__text {
+        & h2 {
+            & hr {
+                width: 75%;
+                margin: 1rem auto;
+                height: .5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .home {
+        height: 100%;
+    }
 }

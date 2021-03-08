@@ -338,6 +338,14 @@ footer {
       padding: 5vh 2vw 0 2vw; }
       .home__links i:hover {
         color: #F0EAD2; }
+  .home__text h2 hr {
+    width: 75%;
+    margin: 1rem auto;
+    height: .5rem; }
+
+@media (max-width: 991.98px) {
+  .home {
+    height: 100%; } }
 
 .about {
   hyphens: auto;
