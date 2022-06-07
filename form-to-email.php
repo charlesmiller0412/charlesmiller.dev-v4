@@ -17,6 +17,22 @@
   $to = 'charles@charlesmiller.dev';
   $headers = 'From: ' . $visitor_email;
 
+  $secretKey = "6LfIeVAgAAAAANIXD42CAPVLUTNBG19OJ9pB3rqY";
+  $responseKey = $_POST['g-recaptcha-response'];
+  $UserIP = $_SERVER['REMOTE_ADDR'];
+  $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP";
+
+  $response = file_get_contents($url);
+  $response = json.decode($response);
+
+  if ($response->success) {
+    mail($to, $email_subject, $email_body, $headers);
+    echo "yay";
+  } else {
+    echo "Invalid Captcha, Please Try Again";
+  }
+
+
   //Send email
   mail($to, $email_subject, $email_body, $headers);
   if (mail){
