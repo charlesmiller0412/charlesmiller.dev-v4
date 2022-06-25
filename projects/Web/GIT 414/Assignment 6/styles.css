@@ -1,0 +1,451 @@
+/* 
+Charles Miller
+GIT 414
+Assignment 7
+Fall A 2020 
+*/
+
+/* Global Styles */
+* {
+    margin: 0;
+    clear: both;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-image: url(images/headerBG.jpg);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: "Skia", Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    margin: auto;
+    color: #F2B809;
+    font-size: 4vw;
+}
+
+nav {
+    background-color: #4E89CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+}
+
+nav #active {
+    color: #F2B809;
+}
+
+nav li {
+    display: inline;
+    margin: 2vw;
+}
+
+nav a {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+/* index */
+
+#meet h2 {
+    text-align: left;
+}
+
+#services {
+    margin: 30px 0;
+}
+
+/* projects */
+
+/* contact */
+
+#contact {
+    text-align: center;
+}
+
+#contact input, textarea {
+    color: #FFF;
+}
+
+#first, #last, #email, #phone, #message {
+    background-color: #657B95;
+    border-radius: 20px;
+    text-indent: 30px;
+}
+
+#contact ::placeholder {
+    color: #FFF;
+}
+
+#subButton {
+    margin: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: #657B95;
+    color: white;
+    border-radius: 50px;
+}
+
+#contact #formError {
+    display: none;
+    color: red;
+}
+
+footer {
+    background-color: #1D334D;
+    color: #F2B809;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h5 {
+    margin: auto;
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* Desktop */
+/* --------------------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+    #headerLogo {
+        width: 40vw;
+    }
+
+    nav, nav a {
+        font-size: 2.5vh;
+        height: 3vh;
+        margin: 5px 0;
+    }
+
+    /* index */
+
+    #home {
+        display: flex;
+    }
+
+    .container {
+        width: 35%;
+        margin: 10px 20px;
+    }
+
+    #meet {
+        line-height: 30px;
+        margin: 20% auto 100px auto;
+    }
+
+    #services h3, #services ul, #services li{
+        margin-bottom: 10px;
+    }
+
+    #images {
+        display: flex;
+        justify-content: center;
+        margin: 0 75px;
+    }
+
+    #fireFam {
+        position: absolute;
+        width: 20%;
+        left: 60vw;
+        top: 60vh;
+        margin-bottom: 100px;
+    }
+
+    #hockey {
+        position: absolute;
+        width: 20%;
+        left: 78vw;
+        top: 40vh;
+    }
+
+    #kids {
+        position: absolute;
+        width: 20%;
+        left: 45vw;
+        top: 40vh;
+    }
+    
+    /* projects */
+
+    #projects h2 {
+        font-size: 2vw;
+        text-align: center;
+        margin-bottom: 20px;;
+    }
+
+    #web ul, #graphic ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 0;
+    }
+    #holden, #natours, #museum {
+        width: 30vw;
+    }
+
+    #IEposter, #KCposter, #IEflyer {
+        width: 30vh;
+        margin-bottom: 50px;
+    }
+
+
+    /* contact */
+    #contact {
+        margin: 10px;
+    }
+
+    #first, #last, #email, #phone {
+        width: 40%;
+        height: 40px;
+    }
+
+    #first, #last, #email, #phone, textarea::placeholder, #subButton {
+        font-size: 24px;
+    }
+
+    #contact input {
+        margin: 10px 0;
+    }
+
+    #message {
+        width: 80%;
+        display: block;
+        margin: 10px auto;
+
+    }
+
+    footer {
+        height: 3vh;
+        font-size: 2vh;
+    }
+}
+
+
+
+
+
+
+/* --------------------------------------------- */
+/* Tablet*/
+/* --------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #headerLogo {
+        width: 40vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    /* index.html */
+
+    #home {
+        padding-bottom: 100px;
+        margin: 20px;
+    }
+    
+    #images {
+        display: flex;
+        justify-content: center;
+        margin: 0 75px;
+    }
+    #fireFam {
+        position: absolute;
+        width: 33%;
+        left: 50px;
+        height: 400px;
+        padding-bottom: 100px;
+
+    }
+
+    #hockey {
+        position: absolute;
+        width: 33%;
+        right: 50px;
+        height: 400px;
+    }
+
+    #kids {
+        position: absolute;
+        width: 33%;
+        top: 700px;
+    }
+
+    /* projects.html */
+    #projects h2 {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 20px;;
+    }
+
+    #web ul, #graphic ul{
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    #holden, #natours, #museum {
+        width: 75vw;
+    }
+
+    #IEposter, #KCposter {
+        width: 40%;
+        display: inline-block;
+    }
+
+    #IEflyer {
+        width:  75vw;
+    }
+
+    /* contact */
+
+    #contact {
+        margin: 10px;
+    }
+
+    #first, #last, #email, #phone {
+        width: 40%;
+        height: 40px;
+    }
+
+    #first, #last, #email, #phone, textarea::placeholder, #subButton {
+        font-size: 24px;
+    }
+
+    #contact input {
+        margin: 10px 0;
+    }
+
+    #message {
+        width: 80%;
+        display: block;
+        margin: 10px auto;
+
+    }
+
+    footer {
+        height: 3vh;
+        font-size: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+/* Mobile */
+/* --------------------------------------------- */
+
+@media screen and (max-width: 767px)  {
+
+    #headerLogo {
+        width: 40vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    main {
+        margin: 20px 10px 70px 10px;
+        line-height: 20px;
+    }
+
+    /* index.html */
+    #meet h2 {
+        text-align: left;
+    }
+
+    #services {
+        margin: 30px 0;
+    }
+
+    #kids {
+        width: 100%;
+    }
+
+    #fireFam, #hockey {
+        display: none;
+    }
+
+    #languages {
+        margin: 10px 0;
+    }
+
+    /* projects.html */
+    #projects h2 {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 20px;;
+    }
+
+    #web ul, #graphic ul{
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    #holden, #natours, #museum {
+        width: 100%;
+    }
+
+    #IEposter, #KCposter, #IEflyer {
+        width: 90%;
+    }
+
+    /* contact.html */
+
+    #contact h3 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #contactForm h4 {
+        margin: 10px 0;
+    }
+
+    #first, #last, #email, #phone {
+        width: 90%;
+        height: 30px;
+        margin: 10px 0;
+    }
+    
+    #message {
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 90%;
+    }
+
+    /* footer */
+    footer {
+        height: 50px;
+        font-size: 4vw;
+    }
+}

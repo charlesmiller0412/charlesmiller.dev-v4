@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+                <!-- 
+        Charles Miller
+        GIT 418
+        Final Project - Javascript Tutorial
+        Fall B 2020 
+        -->
+        <meta charset="utf-8"/>
+        <meta name="Author" content="Charles Miller">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="Arizona State University Fall 2020 GIT-418. For educational purposes only. 
+        This is the final project for GIT - 418">
+
+        <!-- These 2 lines of code get the highlight js code library from a cloud content distribution network (CDN) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/languages/javascript.min.js"></script>
+        <!-- In order to add html code examples this line needs to be in the head tag -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/languages/xml.min.js"></script>
+        <!-- This line is needed for the default CSS style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.5/styles/default.min.css">
+
+        <script src="modernizr.custom.05819.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/mis3lef.css">       
+
+        <title>Javascript Tutorial | Arrays</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>jQuery</h1>
+                <h2>JavaScript Tutorial</h2>
+                <div id="headerBottom">
+                    <h3>Charles Miller</h3>
+                    <h3>GIT-418 FALL B 2020</h3>
+                </div>
+            </header>
+            <main>
+                <section id="intro">
+                    <aside id="info">
+                        <h2>What is jQuery and what does it do?</h2>
+                        <p>
+                            CSS is a great tool when it comes to styling web pages. CSS is very easy to learn and very easy to organize. What if 
+                            all front-end web development could be done in one language though? Just one file for an entire webpage 
+                            (other than an image folder of course). This is where jQuery comes in to the picture. jQuery gives us the ability to 
+                            do many different tasks all within the same package. This page was written using HTML, however, it was styled with jQuery 
+                            (no CSS file attached). Here's what jQuery can do:
+                            <ul>
+                                <li>CSS Styling</li>
+                                <li>JavaScript</li>
+                                <li>Animations</li>
+                                <li>Effects</li>
+                                <li>Manipulation</li>
+                                <li>Traversing</li>
+                            </ul>
+                            When jQuery is used for styling, you could say there isn't much difference in the amount of code,
+                            however, the styling options are limitless with jQuery. Take a look at the example to the right. 
+                            The CSS example is strictly using the code above. Now if I were to code this text in jQuery I could 
+                            also connect it to an event to make it do nearly anthing I want. Try it out!
+                            <h4>Here is the styling in CSS:</h4>
+                        </p>
+                        <!-- give css example -->
+                        <pre>
+                            <code class="css">
+                                #css {<br>
+                                    <span class="indent">margin: 20px 0;</span><br>
+                                    <span class="indent">color: red;</span><br>
+                                }
+                            </code>
+                        </pre>
+                        <p>
+                            <h4>Here is the styling in jQuery:</h4>
+                        </p>
+                        <!-- give jQuery example -->
+                        <pre>
+                            <code class="javascript">
+                                $("#jQuery").css({"margin" : "20px 0", "color" : "red"});
+                            </code>
+                        </pre>
+                    </aside>
+                    <aside id="example">
+                        <h2>jQuery Example</h2>
+                        <h4>Using CSS:</h4>
+                        <div id="css">Hello World!</div>
+                        <h4>Using jQuery</h4>
+                        <input type="button" id="invisible" value="Visible">
+                        <input type="button" id="color" value="Red">
+                        <div id="jQuery">Hello World!</div>
+
+                        <pre>
+                            <code class="javascript" id="exampleJQ">
+                                $("#color").click(function () {<br>
+                                    <span class="indent"></span>if ($("#color").val() === "Red") {</span><br>
+                                        <span class="doubleIndent"></span>$("#jQuery").css("color", "red");</span><br>
+                                        <span class="doubleIndent"></span>$("#color").val("Blue");</span><br>
+                                    <span class="indent">} else {</span><br>
+                                        <span class="doubleIndent">$("#jQuery").css("color", "blue");</span><br>
+                                        <span class="doubleIndent">$("#color").val("Red");</span><br>
+                                    <span class="indent">};</span><br>
+                                });
+                            </code>
+                        </pre>
+                    </aside>
+                </section>
+                <section id="walkthrough">
+                    <h3>What does it mean?</h3>
+                    <p>The $ highlighted in yellow is what calls for the jQuery CDN so the remainder of the code is understood. 
+                        Then in red, within the parentheses, is the selector you are calling such as the ID or class. Lastly, 
+                        in blue, we call the css method and tell it what css attributes we want included. Within the code in 
+                        this page, you can also see several other methods being called such as slideDown(), slideUp(). show(), 
+                        and hide(). Further information can be found at <a href="https://jquery.com">jQuery.com</a> in the 
+                        <a href="https://api.jquery.com/">API Documentation</a>.
+                    </p>
+                    <pre>
+                        <code class="javascript" id="meaning">
+                            <span class="hlY">$</span><span class="hlR">("#jQuery")</span><span class="hlB">.css({"margin" : "20px 0", "color" : "red"});</span>
+                        </code>
+                    </pre>
+                    <h2>A SIMPLE WALKTHROUGH</h2>
+                    <h3>Where to begin:</h3>
+                        <p>Make sure you add the script linking to a CDN prior to beginning your code. Place it at the end of your 
+                            HTML file above your local .js file and the closing body tag (&lt;/body>).</p>
+                        <pre>
+                            <code class="javascript">
+                                &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                            </code>
+                        </pre>
+                    <p>
+                        Now we are going to do a simple project using jQuery to create an animated dropdown menu. 
+                        This would be most useful as a "hamburger" navigation menu in a mobile device. 
+                    </p>
+                    <p>
+                        Let's begin by setting up a button and an unordered list in your HTML file within a div since this will be an object. Set the buttons 
+                        ID to menu and value to hidden. Then, give the unordered list (UL) an ID of nav while placing a few li elements within.
+                    </p>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="container"><br>
+                            <span class="indent">&lt;button id="menu" value="hidden">MENU&lt;/button></span><br>
+                            <span class="indent">&lt;ul id="nav"></span><br>
+                            <span class="doubleIndent">&lt;li>Link 1&lt;/li></span><br>
+                            <span class="doubleIndent">&lt;li>Link 2&lt;/li></span><br>
+                            <span class="doubleIndent">&lt;li>Link 3&lt;/li></span><br>
+                            <span class="indent">&lt;/ul></span><br>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <p>
+                        Now that you have created your menu button and list, lets add some style with jQuery in your .js file or within &lt;script> tags</script>. For the menu ID, we will add
+                        a width of 302px, height of 50px, as well as a background and font color of your choice. For the nav ID, add a padding 
+                        of 0, margin of 0, display as none, a width of 300px, and feel free to add a background color and text alignment of your choice.
+                        Last for styling is the nav ID's li elements. Make the list style type none and give it a solid 1px border in the color 
+                        of your choice. Remember the $ character is what calls the jQuery CDN, then the selector, then the method.
+                    </p>
+                    <pre>
+                        <code class="javascript">
+                            $("#menu").css({"width" : "302px", "height" : "50px", "background-color" : "#4C86DE", "color" : "#FFF"});<br>
+                            $("#nav").css({"padding" : "0", "margin" : "0","display" : "none", "background-color" : "#A5C9E0", "width" : "300px", "text-align" : "center"});<br>
+                            $("#nav li").css({"list-style-type" : "none", "border" : "1px solid #000"});<br>
+                        </code>
+                    </pre>
+                    <p>
+                        Once your code looks similar to above, we can move on to the function that will make the animation. Here are the steps to complete this final task.
+                        <ol id="finalSteps">
+                            <li>Create a function that initites when our #menu is clicked</li>
+                            <li>Add a line to initiate the slideDown() method on our #nav. You can also add the speed statement within the parentheses such as "slow"</li>
+                            <strong>At this point you should unerstand that when the #menu is clicked the function will initiate and the #nav will slideDown().</strong>
+                            <li>Create an if statement that if the value (hint: .val()) of #menu is equal (===) to hidden, #nav will initiate slideDown("fast") and change the value of #menu to shown</li>
+                            <li>Else #nav will slideUp() and change the value of #menu to hidden.</li>
+                        </ol>
+                    </p>
+                    <h4>The finished function should look like this:</h4>
+                    <pre>
+                        <code class="javascript">
+                            $("#menu").click(function() {<br>
+                                <span class="indent">$("#nav").slideDown("slow");</span><br>  
+                                <span class="indent">if ($("#menu").val() === "hidden") {</span><br>
+                                    <span class="doubleIndent">$("#nav").slideDown("fast");</span><br>
+                                    <span class="doubleIndent">$("#menu").val("shown");</span><br>
+                                <span class="indent">} else {</span><br>
+                                    <span class="doubleIndent">$("#nav").slideUp();</span><br>
+                                    <span class="doubleIndent">$("#menu").val("hidden");</span><br>
+                                <span class="indent">};</span><br>
+                            });
+                        </code>
+                    </pre>
+                    <div class="container">
+                        <h4>And should perform like this:</h4>
+                        <button id="menu" value="hidden">Click Me!</button>
+                            <ul id="nav">
+                                <li>Menu</li>
+                                <li>Toggle</li>
+                                <li>Made</li>
+                                <li>With</li>
+                                <li>jQuery</li>
+                            </ul>
+                    </div>
+                </section>
+            </main>
+        <footer>
+            <h5>&copy;2020 Charles Miller</h5>
+            <h5>This site is for educational purposes only</h5>
+        </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script> 
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="modernizr.custom.05819.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/jnz6ntw.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <title>Integrated Engineering | HOME</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/IE_SECONDARY_LOGO_WEB_180x@2x.png" alt="logo">
+                <ul>
+                    <li><a href="index.html" id="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT IE</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn"><a href="products.html">PRODUCTS</a></button>
+                        <div class="dropdown-content">
+                          <a href="wishlist.html">Create A Wish List</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT IE</a></li>
+                    <li><a href="security.html">WEB SECURITY</a></li>
+                </ul>
+                <aside id="statement">FOR EDUCATIONAL PURPOSES ONLY</aside>
+            </nav>
+        </header>
+        <main id="home">
+            <div id="hockeySearch">
+                <h2>Module 5 Hockey API</h4>
+                <h3>Enter a hockey team name and submit to see relevant information.</h5>
+                <input type="text" id="searchTeam">
+                <input type="button" id="btn" value="SUBMIT" onclick="getHockey()">
+                <h2 id="name"></h2>
+                <picture id="logo"></picture>
+                <h4 id="arenaName"></h4>
+                <h4 id="arenaLocation"></h4>
+            </div>
+            <div id="images">
+                <h2>Images of the VW GTI from Flickr API</h2>
+                <h3>(with a CSS filter in the 2nd row)</h3>
+                <div id="imageRows"></div> <!-- where images will be displayed from getFlickrImages() -->
+            </div>
+            <div id="search">
+
+            </div>
+        </main>
+        <footer>
+            <h4>Charles Miller | GIT 418 | FALL 2020</h4>
+        </footer>
+        <script src="script.mjs"></script> <!-- calls main js file -->
+        <!-- calls Flickr API searching for VW + GTI in JSON format and calling getFlickrImages() -->
+        <script src="https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=getFlickrImages&tags=vw+gti&tagmode=any&format=json"></script>
+    </body>
+</html>

@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Effra";
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-family: "Effra";
+    font-weight: bold;
+    font-size: 48px;
+}
+
+
+/* HEADER */
+
+header {
+    color: #5B866B;
+    height: 225px;
+    background-color: white;
+    text-align: center;
+}
+
+header img {
+    margin: auto;
+    margin-top: -10px;
+    display: block;
+    padding-bottom: 13px;
+}
+
+header a {
+    font-family: "Effra";
+    font-size: 18px;
+    padding: 0 5px;
+    margin: 0px 25px;
+    color: #5B866B;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: #B98C48;
+    color: white;
+}
+
+
+/* ABOUT */
+
+#home {
+    height: 720px;
+    background-image: url(images/twotrees.jpg);
+    box-shadow: inset 0 0 0 1024px rgba(159,104,76,.3);
+    background-size: 100%;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#home h1 {
+    font-family: "Effra";
+    font-weight: bold;
+    font-size: 64px;
+    display: block;
+    padding-top: 254px;
+}
+
+#home h2 {
+    margin: 0;
+    font-family: "Kepler Std";
+    font-style: italic;
+    font-size: 48px;
+}
+
+
+/* ABOUT */
+
+#about {
+    height: 550px;
+}
+
+#about h2 {
+    color: #524741;
+}
+
+#about h3 {
+    font-family: "Effra";
+    font-weight: bold;
+    font-size: 36px;
+    color: #86765C;
+    margin: 10px 0;
+}
+
+#about-text {
+    width: 490px;
+    height: 340px;
+    float: left;
+}
+
+#about-images {
+    float: left;
+    width: 490px;
+    height: 320px;
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio {
+    height: 550px;
+    width: 100%;
+    background-color: #5B866B;
+    display: inline-block;
+    text-align: center;
+}
+
+#portfolio h2 {
+    color: white;
+}
+
+#portfolio img {
+    margin: 0px 20px 20px 20px;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    height: 572px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#map {
+    margin-right: 15px;
+}
+
+#contact h2 {
+    color: #524741;
+    margin: 27px 0;
+}
+
+input {
+    margin-bottom: 25px;
+    width: 405px;
+    height: 68px;
+    background-color: #EBEBEB;
+    border: none;
+    font-family: "Effra";
+    font-size: 18px;
+}
+
+textarea {
+    margin-bottom: 25px;
+    width: 405px;
+    height: 175px;
+    background-color: #EBEBEB;
+    border: none;
+    font-family: "Effra";
+    font-size: 18px;
+}
+
+#submit {
+    margin-left: 255px;
+    width: 150px;
+    height: 63px;
+    background-color: #5B866B;
+    font-size: 24px;
+    font-family: "Effra";
+    color: white;
+}
+
+#submit img {
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    height: 40px;
+    width: 200px;
+}
+
+#toTop {
+    width: 63px;
+    height: 63px;
+    margin: 0 0 -13px 10px;
+
+}
+
+footer a {
+    color: #524741;
+    text-decoration: none;
+    font-family: "Effra";
+    font-size: 14px;
+    margin: 0 0 13px 0;
+}

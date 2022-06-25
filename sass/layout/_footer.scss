@@ -1,0 +1,13 @@
+footer {
+    background-color: $color-dark-blue;
+    color: $color-sand;
+    padding-bottom: 2rem;
+
+    & img {
+        padding: 2rem 0;
+        width: 20vw;
+        max-width: 20rem;
+        display: block;
+        margin: auto;
+    }
+}

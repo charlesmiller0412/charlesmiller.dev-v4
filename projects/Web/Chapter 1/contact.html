@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="modernizr.custom.05819.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/jnz6ntw.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <title>Integrated Engineering | CONTACT IE</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="images/IE_SECONDARY_LOGO_WEB_180x@2x.png" alt="logo">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT IE</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn"><a href="products.html">PRODUCTS</a></button>
+                        <div class="dropdown-content">
+                          <a href="wishlist.html">Create A Wish List</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="contact.html" id="active">CONTACT IE</a></li>
+                    <li><a href="security.html">WEB SECURITY</a></li>
+                </ul>
+                <aside id="statement">FOR EDUCATIONAL PURPOSES ONLY</aside>
+            </nav>
+        </header>
+        <main>
+            <section id="form">
+                <form id="contactForm">
+                    <h2>Contact Us</h2>
+                    <input type="text" name="name" id="name" placeholder="What is your name?">
+                    <input type="email" name="email" id="email" placeholder="What is your email?">
+                    <h5 id="errorName" class="error">Please enter your name</h5>
+                    <h5 id="errorEmail" class="error">Please enter a proper email address</h5><br>
+                    <label for="reason">What is the reason for contacting IE?</label>
+                    <select name="reason" id="reason">
+                        <option>Select an option</option>
+                        <option>Support</option>
+                        <option>Sponsorship</option>
+                        <option>Orders</option>
+                        <option>Other</option>
+                    </select>
+                    <h5 id="errorReason" class="error">Please select an option from the dropdown menu</h5>
+                    <textarea placeholder="What is your message?" id="message"></textarea>
+                    <h5 id="errorMsg" class="error">Please include a message</h5>
+                    <input type="button" value="Submit" id="submit">
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <h4>Charles Miller | GIT 418 | FALL 2020</h4>
+        </footer>
+        <script src="script.mjs"></script>
+    </body>
+</html>
+
+<!-- For assignment 3, I was to create a form validation function using JavaScript.
+I used multiple try catch statments in order to check each input for proper entries.
+If an error was found, it would throw a statement to the console saying the error, as
+well as display a preset error message. If there was no error found, or if the error 
+was fixed upon clicking submit, the error message would no longer be displayed and 
+would not be thrown to the console. Then "finally" it would write to either fix the 
+error or alert that the message was received and write that there were no errors.
+The main and basically only method I used for debugging was the console. By 
+the console showing me the line of the error to look at on my editor (VS Code), 
+and basing my lines off of my pseudocode I was able to write this without much error 
+at all.-->

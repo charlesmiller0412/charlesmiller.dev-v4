@@ -1,0 +1,56 @@
+.about {
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    background-image: linear-gradient(rgba($color-green, .8), 1%, rgba($color-sand, .8));
+
+    &__text {
+        margin: auto;
+
+        &-bottom {
+
+            &--soft {
+                margin-top: 5vh;
+                
+                & img {
+                    width: 75%;
+                    height: 75%;
+                }
+            }
+        }
+    }
+
+    &__icons {
+        text-align: center;
+        width: 100%;
+        margin: 5vh 0 5vh 0;
+
+        & li {
+            list-style-type: none;
+            display: inline;
+            margin: 0 2vw;
+
+            & i {
+                font-size: 2rem;
+                color: $color-green;
+            }
+        }
+    }
+
+    & img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .about p{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+    .about p{
+        font-size: 2.5vh;
+    }
+}

@@ -1,0 +1,183 @@
+.navbar {
+    &__links {
+        font-family: $continuo;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.2vw;
+    }
+}
+
+.mobileNav__overlay {
+    font-size: 2rem;
+    font-family: $continuo;
+}
+
+.home {
+    & h1 {
+        font-family: $bree;
+        font-size: 4vw;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 1rem;
+    }
+
+    & h2 {
+        font-size: 2.5vw;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    & span {
+        font-size: 3vw;
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+.about {
+    & p {
+        font-size: 1vw;
+        font-family: $bree;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    &__bottom-text--soft {
+        font-family: $yrsa;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+}
+
+.skills {
+    font-size: 50%;
+    font-weight: 600;
+    
+    & .row {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    & h3 {
+        font-family: $bree;
+        font-weight: 600;
+        font-size: 2.6rem;
+    }
+
+    &__chart {
+        font-family: $exo;
+    }
+}
+
+.education {
+    font-size: 150%;
+    font-family: $bree;
+
+    & h3 {
+        font-weight: 600;
+    }
+    
+    &__card {
+        font-family: $yrsa;
+    }
+}
+
+.projects {
+    font-size: 50%;
+    & h3 {
+        font-family: $continuo;
+        color: $color-dark-blue;
+    }
+}
+
+.contact {
+    font-size: 1.5rem;
+
+    &__control {
+        font-size: 1.5rem;
+    }
+    &__control::placeholder {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    font-style: $yrsa;
+    font-size: 1vw;
+}
+
+.dutchbros {
+    header {
+        & h1 {
+            font-family: $bree;
+            font-size: 2vw;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 1rem;
+        }
+    }
+    & main {
+        font-family: $yrsa;
+        font-size: 1.3vw;
+        & h3 {
+            font-family: $continuo;
+            color: $color-dark-blue;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .home {
+        & .container {
+            margin-bottom: 2rem;
+        }
+        & h1 {
+            font-size: 8vw;
+        }
+        & h2 {
+            font-size: 6vw;
+        }
+        & span {
+            font-size: 8vw;
+        }
+    }
+    .dutchbros {
+        & header h1 {
+            font-size: 3.5vw;
+        }
+        & .row {
+            font-size: 3vw;
+        }
+    }
+}
+@media (max-width: 992px) and (orientation: landscape) {
+    .home {
+        & .container {
+            margin: 0;
+        }
+        & h1 {
+            font-size: 6vw;
+        }
+        & h2 {
+            font-size: 3vw;
+        }
+        & span {
+            font-size: 5vw;
+        }
+        &__left {
+            & img {
+                padding-top: 5vh;
+                width: 20vw;
+            }
+            & button {
+                font-size: 1.5vw;
+            }
+        }
+        &__links {
+            display: none;
+        }
+    }
+}

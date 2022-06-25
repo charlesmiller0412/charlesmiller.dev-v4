@@ -1,0 +1,73 @@
+.contact {
+    background-image: linear-gradient(rgba($color-dark-blue, .8), rgba($color-dark-blue, .8));
+    height: 100vh;
+
+    &__name,
+    &__info,
+    &__comment {
+        padding: 2rem 0;
+    }
+
+    &__control {
+        border-radius: 1rem;
+        height: 5rem;
+        width: 100%;
+        padding-left: 1rem;
+        border: none;
+    }
+    
+    & textarea {
+        height: 10rem;
+        border-radius: 1rem;
+    }
+
+    &__btn {
+        color: $color-green;
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid $color-green;
+        box-shadow: 0 2px 5px $color-green;
+        border-radius: 1rem;
+        transition: all .2s;
+
+        &:active {
+            box-shadow: 0 1px 1px $color-green;
+            transform: scale(.98) translateY(1px);
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .contact {
+        padding: 0;
+    }
+    .contact__name,
+    .contact__info {
+        padding: 0;
+        margin: 0 2rem;
+    }
+
+    .contact__name div,
+    .contact__info div,
+    .contact__comment {
+        margin: 1rem 2rem;
+        padding: 0;
+    }
+    
+}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+    .contact {
+        height: 100%;
+        padding: 5vh 0;
+        font-size: 1.5vh;
+        &__control {
+            height: 7vh;
+        }
+        & textarea {
+            height: 20vh;
+        }
+    }
+}

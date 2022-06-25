@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charles Miller -->
+        <meta charset="utf-8">
+        <meta name="viewport">
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Odibee+Sans&display=swap" rel="stylesheet">
+
+        <!--[if lt IE 9-->
+        <script src="/projects/routeHolden/html5shiv.js"></script>
+        <!-- endif] -->
+
+        <title>Route Holden | Contact</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="container-fluid">
+                <a href="index.html"><h1>Route Holden</h1></a>
+                <h2 class="button"><a href="contact.html">Donate</a></h2>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="travels.html">Travels</a></li>
+                <li><a href="photography.html">Photography</a></li>
+				<li class="activePage"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="wrapper">
+            <main>
+				<h2>Contact Me</h2>
+				<hr> <br>
+				<form>
+					<input type="text" class="formInput" placeholder="First Name" required>
+					<input type="text" class="formInput" placeholder="Last Name" required>
+					<input type="text" class="formInput" placeholder="Company (Optional)">
+					<input type="tel" class="formInput" placeholder="Phone (Optional)">
+					<input type="email" class="formInput formLeft" placeholder="Email" style="width: 82%;" required>
+					<p style="margin-top: 20px;">What is the reason for contact?</p>
+					<input type="radio" id="personal" name="contact" value="Personal">
+					<label for="personal">Personal</label>
+					<input type="radio" id="business" name="contact" value="Business">
+					<label for="business">Business</label>
+					<input type="radio" id="donate" name="contact" value="donate">
+					<label for="donate">Donation</label><br>
+					<textarea class="" placeholder="Comments?" required></textarea><br>
+					<input type="reset" class="btn">
+					<input type="submit" class="btn" formtarget="_blank" formmethod="post" formaction="http://webdevbasics.net/scripts/demo.php">
+				</form>
+            </main>
+        </div>
+        <div class="footer">
+			<footer class="clear">
+				Route Holden Copyright &copy; 2019 Holden Barber - All Rights Reserved. This site is for educational purposes only.
+			</footer>
+		</div>
+    </body>
+</html>
